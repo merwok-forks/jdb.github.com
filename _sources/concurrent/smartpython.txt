@@ -31,7 +31,7 @@ the :func:`title` scraping function::
 Another *traditional* version, where the callback is defined before
 the request. It is easier to read from the bottom::
 
-  def getpage_callback( html )
+  def getpage_callback(html):
       print parse(html).xpath( ... )      
 
   getPage(url).addCallback(getpage_callback)
